@@ -3,10 +3,10 @@
   "builds": [
     {
       "src": "public/index.php",
-      "use": "@vercel/php"
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "public/index.php" }
+    { "src": "/(.*)", "dest": "/public/index.php" }
   ]
 }
