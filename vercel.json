@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "api/index.php",
-      "use": "@vercel/static-build"
+      "use": "@vercel/php",
+      "config": {
+        "buildCommand": "./vercel-build.sh"
+      }
     }
   ],
   "routes": [

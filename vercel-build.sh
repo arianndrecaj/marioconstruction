@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install composer dependencies
-composer install --no-dev --optimize-autoloader
+composer install
 
 # Clear caches
 php artisan config:cache
